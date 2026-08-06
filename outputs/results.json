@@ -1,0 +1,495 @@
+[
+  {
+    "strategy": "fixed_size",
+    "chunk_count": 111,
+    "avg_chunk_chars": 900.2792792792793,
+    "avg_chunk_tokens": 198.7117117117117,
+    "chunk_sizes_chars": [
+      913,
+      922,
+      908,
+      855,
+      918,
+      872,
+      922,
+      896,
+      894,
+      922,
+      913,
+      939,
+      884,
+      897,
+      949,
+      876,
+      904,
+      869,
+      913,
+      930,
+      987,
+      948,
+      931,
+      955,
+      887,
+      852,
+      891,
+      886,
+      952,
+      861,
+      964,
+      930,
+      854,
+      826,
+      891,
+      876,
+      907,
+      932,
+      984,
+      890,
+      940,
+      920,
+      963,
+      893,
+      911,
+      892,
+      872,
+      909,
+      915,
+      867,
+      886,
+      939,
+      891,
+      866,
+      855,
+      904,
+      878,
+      896,
+      936,
+      862,
+      905,
+      925,
+      922,
+      834,
+      930,
+      953,
+      927,
+      917,
+      894,
+      950,
+      943,
+      925,
+      901,
+      941,
+      961,
+      929,
+      964,
+      915,
+      882,
+      917,
+      932,
+      887,
+      877,
+      868,
+      896,
+      861,
+      819,
+      829,
+      827,
+      836,
+      848,
+      919,
+      1020,
+      965,
+      862,
+      878,
+      921,
+      876,
+      886,
+      929,
+      868,
+      925,
+      904,
+      947,
+      991,
+      954,
+      807,
+      919,
+      970,
+      947,
+      233
+    ],
+    "avg_precision_at_3": 0.5333333333333333,
+    "avg_faithfulness": 1.0,
+    "avg_relevance": 0.52,
+    "query_results": [
+      {
+        "query_id": "factual",
+        "question": "What language did Paul Graham write his new Lisp, Bel, in, and what made that unusual?",
+        "retrieved": [
+          {
+            "score": 0.6684688329696655,
+            "chunk": "5 to October 12, 2019. It was fortunate that I had a precisely defined goal, or it would have been hard to keep at it for so long.\n\nI wrote this new Lisp, called Bel , in itself in Arc. That may sound like a contradiction, but it's an indication of the sort of trickery I had to engage in to make this work. By means of an egregious collection of hacks I managed to make something close enough to an interpreter written in itself that could actually run. Not fast, but fast enough to test.\n\nI had to ban myself from writing essays during most of this time, or I'd never have finished. In late 2015 I spent 3 months writing essays, and when I went back to working on Bel I could barely understand the code. Not so much because it was badly written as because the problem is so convoluted. When you're working on an interpreter written in itself, it's hard to keep track of what's"
+          },
+          {
+            "score": 0.6604039669036865,
+            "chunk": "could test that way indeed, there was a bug in it that McCarthy had overlooked. To test a more complicated interpreter, you'd have had to run it, and computers then weren't powerful enough.\n\nNow they are, though. Now you could continue using McCarthy's axiomatic approach till you'd defined a complete programming language. And as long as every change you made to McCarthy's Lisp was a discoveredness-preserving transformation, you could, in principle, end up with a complete language that had this quality. Harder to do than to talk about, of course, but if it was possible in principle, why not try? So I decided to take a shot at it. It took 4 years, from March 26, 2015 to October 12, 2019. It was fortunate that I had a precisely defined goal, or it would have been hard to keep at it for so long.\n\nI wrote this new Lisp, called Bel , in itself in Arc. That"
+          },
+          {
+            "score": 0.6484898924827576,
+            "chunk": ", and from that point Lisp started also to be a programming language in the ordinary sense. But its origins as a model of computation gave it a power and elegance that other languages couldn't match. It was this that attracted me in college, though I didn't understand why at the time.\n\nMcCarthy's 1960 Lisp did nothing more than interpret Lisp expressions. It was missing a lot of things you'd want in a programming language. So these had to be added, and when they were, they weren't defined using McCarthy's original axiomatic approach. That wouldn't have been feasible at the time. McCarthy tested his interpreter by hand-simulating the execution of programs. But it was already getting close to the limit of interpreters you could test that way indeed, there was a bug in it that McCarthy had overlooked. To test a more complicated interpreter, you'd have had to run it, and computers then weren't powerful enough.\n\nNow they are, though. Now you could continue"
+          }
+        ],
+        "answer": "Paul Graham wrote his new Lisp, Bel, in Arc, which is itself a Lisp. What makes this unusual is that he wrote Bel in itself, in Arc, which may sound like a contradiction, and required an \"egregious collection of hacks\" to achieve.",
+        "precision_at_3": 0.6666666666666666,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 5
+      },
+      {
+        "query_id": "multihop",
+        "question": "Paul Graham created two programming languages, Arc and Bel. In what years did he start and finish each one?",
+        "retrieved": [
+          {
+            "score": 0.6659495830535889,
+            "chunk": "back to working on Bel I could barely understand the code. Not so much because it was badly written as because the problem is so convoluted. When you're working on an interpreter written in itself, it's hard to keep track of what's happening at what level, and errors can be practically encrypted by the time you get them.\n\nSo I said no more essays till Bel was done. But I told few people about Bel while I was working on it. So for years it must have seemed that I was doing nothing, when in fact I was working harder than I'd ever worked on anything. Occasionally after wrestling for hours with some gruesome bug I'd check Twitter or HN and see someone asking \"Does Paul Graham still code?\"\n\nWorking on Bel was hard but satisfying. I worked on it so intensively that at any given time I had a decent chunk of the code in my head and could write more there. I remember taking the boys to the coast on a sunny day in 201"
+          },
+          {
+            "score": 0.6560032367706299,
+            "chunk": "5 to October 12, 2019. It was fortunate that I had a precisely defined goal, or it would have been hard to keep at it for so long.\n\nI wrote this new Lisp, called Bel , in itself in Arc. That may sound like a contradiction, but it's an indication of the sort of trickery I had to engage in to make this work. By means of an egregious collection of hacks I managed to make something close enough to an interpreter written in itself that could actually run. Not fast, but fast enough to test.\n\nI had to ban myself from writing essays during most of this time, or I'd never have finished. In late 2015 I spent 3 months writing essays, and when I went back to working on Bel I could barely understand the code. Not so much because it was badly written as because the problem is so convoluted. When you're working on an interpreter written in itself, it's hard to keep track of what's"
+          },
+          {
+            "score": 0.6308020949363708,
+            "chunk": "fall short of. I certainly did. So at the end of the summer Dan and I switched to working on this new dialect of Lisp, which I called Arc, in a house I bought in Cambridge.\n\nThe following spring, lightning struck. I was invited to give a talk at a Lisp conference, so I gave one about how we'd used Lisp at Viaweb. Afterward I put a postscript file of this talk online, on paulgraham.com, which I'd created years before using Viaweb but had never used for anything. In one day it got 30,000 page views. What on earth had happened? The referring urls showed that someone had posted it on Slashdot. [ 10 ]\n\nWow, I thought, there's an audience. If I write something and put it on the web, anyone can read it. That may seem obvious now, but it was surprising then. In the print era there was a narrow channel to readers, guarded by fierce"
+          }
+        ],
+        "answer": "The context does not contain enough information to determine the exact years Paul Graham started and finished working on Arc and Bel. It mentions that he spent 3 months writing essays in late 2015 and then went back to working on Bel, and that he worked on Bel from some point until October 12, 2019. However, it does not provide a specific start year for either Arc or Bel.",
+        "precision_at_3": 0.6666666666666666,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 2
+      },
+      {
+        "query_id": "negation",
+        "question": "Did Robert Morris agree to work with Paul Graham on the Aspra startup idea in 2000?",
+        "retrieved": [
+          {
+            "score": 0.582806408405304,
+            "chunk": "it was replaced by \"software as a service,\" but it was current for long enough that I named this new company after it: it was going to be called Aspra.\n\nI started working on the application builder, Dan worked on network infrastructure, and the two undergrads worked on the first two services (images and phone calls). But about halfway through the summer I realized I really didn't want to run a company especially not a big one, which it was looking like this would have to be. I'd only started Viaweb because I needed the money. Now that I didn't need money anymore, why was I doing this? If this vision had to be realized as a company, then screw the vision. I'd build a subset that could be done as an open source project.\n\nMuch to my surprise, the time I spent working on this stuff was not wasted after all. After we started Y Combinator, I would often encounter startups working on parts of this new architecture, and"
+          },
+          {
+            "score": 0.5645346641540527,
+            "chunk": "'d get Robert and Trevor as partners too. [ 13 ]\n\nOnce again, ignorance worked in our favor. We had no idea how to be angel investors, and in Boston in 2005 there were no Ron Conways to learn from. So we just made what seemed like the obvious choices, and some of the things we did turned out to be novel.\n\nThere are multiple components to Y Combinator, and we didn't figure them all out at once. The part we got first was to be an angel firm. In those days, those two words didn't go together. There were VC firms, which were organized companies with people whose job it was to make investments, but they only did big, million dollar investments. And there were angels, who did smaller investments, but these were individuals who were usually focused on other things and made investments on the side. And neither of them helped founders enough in the beginning. We knew how helpless founders were in some respects, because we remembered how"
+          },
+          {
+            "score": 0.5608481168746948,
+            "chunk": "like a plausible idea, he firmly refused to work on it.\n\nHmph. Well, I'd do it myself then. I recruited Dan Giffin, who had worked for Viaweb, and two undergrads who wanted summer jobs, and we got to work trying to build what it's now clear is about twenty companies and several open source projects worth of software. The language for defining applications would of course be a dialect of Lisp. But I wasn't so naive as to assume I could spring an overt Lisp on a general audience; we'd hide the parentheses, like Dylan did.\n\nBy then there was a name for the kind of company Viaweb was, an \"application service provider,\" or ASP. This name didn't last long before it was replaced by \"software as a service,\" but it was current for long enough that I named this new company after it: it was going to be called Aspra.\n\nI started working on the application builder, Dan worked on network infrastructure, and"
+          }
+        ],
+        "answer": "There is not enough information in the context to answer this question. The context does not mention Robert Morris or the year 2000. It does mention Robert, but without a last name, and in a different context, related to Y Combinator, not Aspra.",
+        "precision_at_3": 0.3333333333333333,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 4
+      },
+      {
+        "query_id": "comparison",
+        "question": "How did Paul Graham's motivation for starting Viaweb compare to his motivation for starting Y Combinator?",
+        "retrieved": [
+          {
+            "score": 0.6882336139678955,
+            "chunk": "and which I used in both Viaweb and Y Combinator, is that the low end eats the high end: that it's good to be the \"entry level\" option, even though that will be less prestigious, because if you're not, someone else will be, and will squash you against the ceiling. Which in turn means that prestige is a danger sign.\n\nWhen I left to go back to RISD the next fall, I arranged to do freelance work for the group that did projects for customers, and this was how I survived for the next several years. When I came back to visit for a project later on, someone told me about a new thing called HTML, which was, as he described it, a derivative of SGML. Markup language enthusiasts were an occupational hazard at Interleaf and I ignored him, but this HTML thing later became a big part of my life.\n\nIn the fall of 1992 I moved back to Providence to continue at RISD."
+          },
+          {
+            "score": 0.6848547458648682,
+            "chunk": "like a plausible idea, he firmly refused to work on it.\n\nHmph. Well, I'd do it myself then. I recruited Dan Giffin, who had worked for Viaweb, and two undergrads who wanted summer jobs, and we got to work trying to build what it's now clear is about twenty companies and several open source projects worth of software. The language for defining applications would of course be a dialect of Lisp. But I wasn't so naive as to assume I could spring an overt Lisp on a general audience; we'd hide the parentheses, like Dylan did.\n\nBy then there was a name for the kind of company Viaweb was, an \"application service provider,\" or ASP. This name didn't last long before it was replaced by \"software as a service,\" but it was current for long enough that I named this new company after it: it was going to be called Aspra.\n\nI started working on the application builder, Dan worked on network infrastructure, and"
+          },
+          {
+            "score": 0.6704530119895935,
+            "chunk": "builders. I kept the code tight and didn't have to integrate with any other software except Robert's and Trevor's, so it was quite fun to work on. If all I'd had to do was work on this software, the next 3 years would have been the easiest of my life. Unfortunately I had to do a lot more, all of it stuff I was worse at than programming, and the next 3 years were instead the most stressful.\n\nThere were a lot of startups making ecommerce software in the second half of the 90s. We were determined to be the Microsoft Word, not the Interleaf. Which meant being easy to use and inexpensive. It was lucky for us that we were poor, because that caused us to make Viaweb even more inexpensive than we realized. We charged $100 a month for a small store and $300 a month for a big one. This low price was a big attraction, and a constant thorn in the sides of competitors, but"
+          }
+        ],
+        "answer": "The context does not contain enough information to compare Paul Graham's motivation for starting Viaweb to his motivation for starting Y Combinator. The context mentions that Paul Graham used a similar strategy in both Viaweb and Y Combinator, specifically the idea that \"the low end eats the high end,\" but it does not provide information about his motivations for starting either company.",
+        "precision_at_3": 0.0,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 1
+      },
+      {
+        "query_id": "summarization",
+        "question": "Summarize Paul Graham's career path from college through founding Y Combinator.",
+        "retrieved": [
+          {
+            "score": 0.64361971616745,
+            "chunk": "'d get Robert and Trevor as partners too. [ 13 ]\n\nOnce again, ignorance worked in our favor. We had no idea how to be angel investors, and in Boston in 2005 there were no Ron Conways to learn from. So we just made what seemed like the obvious choices, and some of the things we did turned out to be novel.\n\nThere are multiple components to Y Combinator, and we didn't figure them all out at once. The part we got first was to be an angel firm. In those days, those two words didn't go together. There were VC firms, which were organized companies with people whose job it was to make investments, but they only did big, million dollar investments. And there were angels, who did smaller investments, but these were individuals who were usually focused on other things and made investments on the side. And neither of them helped founders enough in the beginning. We knew how helpless founders were in some respects, because we remembered how"
+          },
+          {
+            "score": 0.630659818649292,
+            "chunk": "mates.\n\nI had not originally intended YC to be a full-time job. I was going to do three things: hack, write essays, and work on YC. As YC grew, and I grew more excited about it, it started to take up a lot more than a third of my attention. But for the first few years I was still able to work on other things.\n\nIn the summer of 2006, Robert and I started working on a new version of Arc. This one was reasonably fast, because it was compiled into Scheme. To test this new Arc, I wrote Hacker News in it. It was originally meant to be a news aggregator for startup founders and was called Startup News, but after a few months I got tired of reading about nothing but startups. Plus it wasn't startup founders we wanted to reach. It was future startup founders. So I changed the name to Hacker News and the topic to whatever engaged one's intellectual curiosity.\n\nHN was no doubt good for"
+          },
+          {
+            "score": 0.6274251341819763,
+            "chunk": "one of the coolest tricks in the lambda calculus, the Y combinator.\n\nI picked orange as our color partly because it's the warmest, and partly because no VC used it. In 2005 all the VCs used staid colors like maroon, navy blue, and forest green, because they were trying to appeal to LPs, not founders. The YC logo itself is an inside joke: the Viaweb logo had been a white V on a red circle, so I made the YC logo a white Y on an orange square.\n\n[ 14 ] YC did become a fund for a couple years starting in 2009, because it was getting so big I could no longer afford to fund it personally. But after Heroku got bought we had enough money to go back to being self-funded.\n\n[ 15 ] I've never liked the term \"deal flow,\" because it implies that the number of new startups at any given time is fixed. This is not"
+          }
+        ],
+        "answer": "The context does not contain enough information to summarize Paul Graham's career path from college through founding Y Combinator. The provided text only mentions his experiences and decisions related to Y Combinator, but does not provide a comprehensive overview of his career path or his life before founding Y Combinator.",
+        "precision_at_3": 1.0,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 1
+      }
+    ]
+  },
+  {
+    "strategy": "recursive",
+    "chunk_count": 136,
+    "avg_chunk_chars": 551.7352941176471,
+    "avg_chunk_tokens": 122.09558823529412,
+    "chunk_sizes_chars": [
+      353,
+      783,
+      777,
+      479,
+      557,
+      762,
+      624,
+      775,
+      746,
+      660,
+      604,
+      619,
+      733,
+      394,
+      526,
+      354,
+      712,
+      578,
+      520,
+      571,
+      417,
+      495,
+      604,
+      636,
+      368,
+      274,
+      696,
+      597,
+      629,
+      215,
+      443,
+      409,
+      767,
+      144,
+      398,
+      674,
+      356,
+      474,
+      661,
+      234,
+      532,
+      469,
+      491,
+      431,
+      604,
+      736,
+      391,
+      772,
+      267,
+      569,
+      594,
+      458,
+      386,
+      789,
+      710,
+      173,
+      628,
+      619,
+      689,
+      641,
+      474,
+      414,
+      585,
+      764,
+      502,
+      640,
+      507,
+      564,
+      707,
+      380,
+      615,
+      733,
+      778,
+      625,
+      759,
+      574,
+      297,
+      534,
+      429,
+      798,
+      665,
+      308,
+      528,
+      565,
+      487,
+      470,
+      332,
+      552,
+      427,
+      790,
+      662,
+      763,
+      262,
+      440,
+      679,
+      221,
+      246,
+      616,
+      635,
+      445,
+      478,
+      777,
+      549,
+      646,
+      402,
+      489,
+      551,
+      527,
+      563,
+      472,
+      511,
+      757,
+      373,
+      792,
+      693,
+      480,
+      632,
+      611,
+      357,
+      478,
+      369,
+      526,
+      494,
+      644,
+      538,
+      650,
+      757,
+      649,
+      594,
+      781,
+      682,
+      600,
+      470,
+      760,
+      600,
+      445
+    ],
+    "avg_precision_at_3": 0.39999999999999997,
+    "avg_faithfulness": 1.0,
+    "avg_relevance": 0.52,
+    "query_results": [
+      {
+        "query_id": "factual",
+        "question": "What language did Paul Graham write his new Lisp, Bel, in, and what made that unusual?",
+        "retrieved": [
+          {
+            "score": 0.6684216856956482,
+            "chunk": "In the summer of 2016 we moved to England. We wanted our kids to see what it was like living in another country, and since I was a British citizen by birth, that seemed the obvious choice. We only meant to stay for a year, but we liked it so much that we still live there. So most of Bel was written in England.\n\nIn the fall of 2019, Bel was finally finished. Like McCarthy's original Lisp, it's a spec rather than an implementation, although like McCarthy's Lisp it's a spec expressed as code."
+          },
+          {
+            "score": 0.6518154144287109,
+            "chunk": "I started writing essays again, and wrote a bunch of new ones over the next few months. I even wrote a couple that weren't about startups. Then in March 2015 I started working on Lisp again.\n\nThe distinctive thing about Lisp is that its core is a language defined by writing an interpreter in itself. It wasn't originally intended as a programming language in the ordinary sense. It was meant to be a formal model of computation, an alternative to the Turing machine. If you want to write an interpreter for a language in itself, what's the minimum set of predefined operators you need? The Lisp that John McCarthy invented, or more accurately discovered, is an answer to that question. [ 19 ]"
+          },
+          {
+            "score": 0.6497560739517212,
+            "chunk": "I wrote this new Lisp, called Bel , in itself in Arc. That may sound like a contradiction, but it's an indication of the sort of trickery I had to engage in to make this work. By means of an egregious collection of hacks I managed to make something close enough to an interpreter written in itself that could actually run. Not fast, but fast enough to test."
+          }
+        ],
+        "answer": "Paul Graham wrote his new Lisp, Bel, in Arc, which is unusual because Bel is a Lisp, and he wrote it in itself, but in order to do that, he had to write it in another Lisp, Arc, using a collection of hacks.",
+        "precision_at_3": 0.3333333333333333,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 5
+      },
+      {
+        "query_id": "multihop",
+        "question": "Paul Graham created two programming languages, Arc and Bel. In what years did he start and finish each one?",
+        "retrieved": [
+          {
+            "score": 0.6618509292602539,
+            "chunk": "So I said no more essays till Bel was done. But I told few people about Bel while I was working on it. So for years it must have seemed that I was doing nothing, when in fact I was working harder than I'd ever worked on anything. Occasionally after wrestling for hours with some gruesome bug I'd check Twitter or HN and see someone asking \"Does Paul Graham still code?\""
+          },
+          {
+            "score": 0.6576557755470276,
+            "chunk": "As well as HN, I wrote all of YC's internal software in Arc. But while I continued to work a good deal in Arc, I gradually stopped working on Arc, partly because I didn't have time to, and partly because it was a lot less attractive to mess around with the language now that we had all this infrastructure depending on it. So now my three projects were reduced to two: writing essays and working on YC."
+          },
+          {
+            "score": 0.6302513480186462,
+            "chunk": "The subset I would build as an open source project was the new Lisp, whose parentheses I now wouldn't even have to hide. A lot of Lisp hackers dream of building a new Lisp, partly because one of the distinctive features of the language is that it has dialects, and partly, I think, because we have in our minds a Platonic form of Lisp that all existing dialects fall short of. I certainly did. So at the end of the summer Dan and I switched to working on this new dialect of Lisp, which I called Arc, in a house I bought in Cambridge."
+          }
+        ],
+        "answer": "The context does not contain enough information to answer the question. It mentions that Paul Graham was working on Bel, but it does not provide the start or finish years for either Arc or Bel. Additionally, it only mentions that he started working on Arc at the end of a summer, but the year is not specified.",
+        "precision_at_3": 0.3333333333333333,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 1
+      },
+      {
+        "query_id": "negation",
+        "question": "Did Robert Morris agree to work with Paul Graham on the Aspra startup idea in 2000?",
+        "retrieved": [
+          {
+            "score": 0.6254280805587769,
+            "chunk": "One day in 2010, when he was visiting California for interviews, Robert Morris did something astonishing: he offered me unsolicited advice. I can only remember him doing that once before. One day at Viaweb, when I was bent over double from a kidney stone, he suggested that it would be a good idea for him to take me to the hospital. That was what it took for Rtm to offer unsolicited advice. So I remember his exact words very clearly. \"You know,\" he said, \"you should make sure Y Combinator isn't the last cool thing you do.\""
+          },
+          {
+            "score": 0.5707065463066101,
+            "chunk": "I got so excited about this idea that I couldn't think about anything else. It seemed obvious that this was the future. I didn't particularly want to start another company, but it was clear that this idea would have to be embodied as one, so I decided to move to Cambridge and start it. I hoped to lure Robert into working on it with me, but there I ran into a hitch. Robert was now a postdoc at MIT, and though he'd made a lot of money the last time I'd lured him into working on one of my schemes, it had also been a huge time sink. So while he agreed that it sounded like a plausible idea, he firmly refused to work on it."
+          },
+          {
+            "score": 0.5652013421058655,
+            "chunk": "In September, Robert rebelled. \"We've been working on this for a month,\" he said, \"and it's still not done.\" This is funny in retrospect, because he would still be working on it almost 3 years later. But I decided it might be prudent to recruit more programmers, and I asked Robert who else in grad school with him was really good. He recommended Trevor Blackwell, which surprised me at first, because at that point I knew Trevor mainly for his plan to reduce everything in his life to a stack of notecards, which he carried around with him. But Rtm was right, as usual. Trevor turned out to be a frighteningly effective hacker."
+          }
+        ],
+        "answer": "The context does not contain enough information to answer this question. The text does not mention the year 2000 or an \"Aspra startup idea\". It only discusses an unnamed idea that the narrator wanted to work on with Robert Morris, but the year mentioned is 2010, and the idea is not specified as \"Aspra\".",
+        "precision_at_3": 0.3333333333333333,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 5
+      },
+      {
+        "query_id": "comparison",
+        "question": "How did Paul Graham's motivation for starting Viaweb compare to his motivation for starting Y Combinator?",
+        "retrieved": [
+          {
+            "score": 0.7055293321609497,
+            "chunk": "We started a new company we called Viaweb, after the fact that our software worked via the web, and we got $10,000 in seed funding from Idelle's husband Julian. In return for that and doing the initial legal work and giving us business advice, we gave him 10% of the company. Ten years later this deal became the model for Y Combinator's. We knew founders needed something like this, because we'd needed it ourselves.\n\nAt this stage I had a negative net worth, because the thousand dollars or so I had in the bank was more than counterbalanced by what I owed the government in taxes. (Had I diligently set aside the proper proportion of the money I'd made consulting for Interleaf? No, I had not.) So although Robert had his graduate student stipend, I needed that seed funding to live on."
+          },
+          {
+            "score": 0.69398033618927,
+            "chunk": "But the most important thing I learned, and which I used in both Viaweb and Y Combinator, is that the low end eats the high end: that it's good to be the \"entry level\" option, even though that will be less prestigious, because if you're not, someone else will be, and will squash you against the ceiling. Which in turn means that prestige is a danger sign."
+          },
+          {
+            "score": 0.678613543510437,
+            "chunk": "[ 11 ] People put plenty of stuff on the internet in the 90s of course, but putting something online is not the same as publishing it online. Publishing online means you treat the online version as the (or at least a) primary version.\n\n[ 12 ] There is a general lesson here that our experience with Y Combinator also teaches: Customs continue to constrain you long after the restrictions that caused them have disappeared. Customary VC practice had once, like the customs about publishing essays, been based on real constraints. Startups had once been much more expensive to start, and proportionally rare. Now they could be cheap and common, but the VCs' customs still reflected the old world, just as customs about writing essays still reflected the constraints of the print era."
+          }
+        ],
+        "answer": "The context does not contain enough information to compare Paul Graham's motivation for starting Viaweb to his motivation for starting Y Combinator. The context mentions the circumstances surrounding the founding of Viaweb, including the need for seed funding, but it does not explicitly discuss Paul Graham's motivations for starting either company. Additionally, the context only mentions Y Combinator in relation to its model being based on the deal made with Julian, and in the context of a general lesson about customs and constraints, but it does not provide information about Paul Graham's motivations for starting Y Combinator.",
+        "precision_at_3": 0.0,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 1
+      },
+      {
+        "query_id": "summarization",
+        "question": "Summarize Paul Graham's career path from college through founding Y Combinator.",
+        "retrieved": [
+          {
+            "score": 0.6640483140945435,
+            "chunk": "There are multiple components to Y Combinator, and we didn't figure them all out at once. The part we got first was to be an angel firm. In those days, those two words didn't go together. There were VC firms, which were organized companies with people whose job it was to make investments, but they only did big, million dollar investments. And there were angels, who did smaller investments, but these were individuals who were usually focused on other things and made investments on the side. And neither of them helped founders enough in the beginning. We knew how helpless founders were in some respects, because we remembered how helpless we'd been. For example, one thing Julian had done for us that seemed to us like magic was to get us set up as a company"
+          },
+          {
+            "score": 0.6572118997573853,
+            "chunk": "[ 11 ] People put plenty of stuff on the internet in the 90s of course, but putting something online is not the same as publishing it online. Publishing online means you treat the online version as the (or at least a) primary version.\n\n[ 12 ] There is a general lesson here that our experience with Y Combinator also teaches: Customs continue to constrain you long after the restrictions that caused them have disappeared. Customary VC practice had once, like the customs about publishing essays, been based on real constraints. Startups had once been much more expensive to start, and proportionally rare. Now they could be cheap and common, but the VCs' customs still reflected the old world, just as customs about writing essays still reflected the constraints of the print era."
+          },
+          {
+            "score": 0.6570332050323486,
+            "chunk": "Much to my surprise, the time I spent working on this stuff was not wasted after all. After we started Y Combinator, I would often encounter startups working on parts of this new architecture, and it was very useful to have spent so much time thinking about it and even trying to write some of it."
+          }
+        ],
+        "answer": "The context does not contain enough information to summarize Paul Graham's career path from college through founding Y Combinator. The provided text only mentions his experience with Y Combinator and his past as a founder who received help from someone named Julian, but it does not provide a comprehensive overview of his career path.",
+        "precision_at_3": 1.0,
+        "faithfulness_1_5": 5,
+        "relevance_1_5": 1
+      }
+    ]
+  }
+]

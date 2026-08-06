@@ -1,0 +1,3 @@
+strategy,chunk_count,avg_chunk_size_chars,avg_chunk_size_tokens,precision_at_3,faithfulness,relevance
+fixed_size,111,900.3,198.7,0.53,1.0,0.52
+recursive,136,551.7,122.1,0.4,1.0,0.52
