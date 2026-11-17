@@ -39,6 +39,7 @@ src/chunking.py         # the two chunking strategies
 src/queries.py           # 5 hand-written queries + deterministic gold-relevance checks
 src/rag.py               # embedding, FAISS index, retrieval, generation, LLM-judge scoring
 src/run.py                # orchestrates everything, writes outputs/
+src/chat.py               # interactive terminal Q&A; optional arg: fixed_size or recursive
 outputs/                  # generated table, charts, failure case, raw results
 ```
 
